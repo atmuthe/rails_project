@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+<h1>welcome to ruby excercise</h1>
+<h2>list users</h2>
+<%= link_to "add users",new_user_path%>
+<% @users.each do |user| %>
+<table style="width:50%" border="solid">
+<tr>
+<th> firstname </th>
+<th> lastname </th>
+<th> designation </th>
+<th> origin </th>
+</tr>
+<tr>
+<td><%= user.firstname %></td>
+<td><%= user.lastname %></td>
+<td><%= user.designation %></td>
+<td><%= user.origin %></td>
+</tr>
+<% end %>
+
+</body>
+</html>
